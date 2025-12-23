@@ -1,3 +1,6 @@
 <Solution>
+  <Project Path="CManager.App/CManager.App.csproj" Id="ec11e0a9-571e-4f4a-ba7e-3b78028ef18a" />
+  <Project Path="CManager.dom/CManager.Dom.csproj" Id="91d4cdc8-64a9-4f5d-86a9-6da3eff0dc1d" />
   <Project Path="CManager.Presentation.ConsoleApp/CManager.Presentation.ConsoleApp.csproj" />
+  <Project Path="CManager.repo/CManager.Repo.csproj" Id="90ae118e-40a6-411a-a7ee-1c1a11019e3d" />
 </Solution>
