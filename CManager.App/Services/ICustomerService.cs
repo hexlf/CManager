@@ -4,7 +4,7 @@ namespace CManager.App.Services;
 
 public interface ICustomerService
 {
-    bool CreatCustomer(string firstName, string lastName, string email, string phoneNumber, string streetAddress, string postalCode, string city);
+    bool CreateCustomer(string firstName, string lastName, string email, string phoneNumber, string streetAddress, string postalCode, string city);
     
     IEnumerable<CustomerModel> GetAllCustomers(out bool hasError);
     

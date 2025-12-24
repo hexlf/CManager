@@ -16,7 +16,7 @@ public class CustomerService : ICustomerService
         _customerRepo = customerRepo;
     }
 
-    public bool CreatCustomer(string firstName, string lastName, string email, string phoneNumber, string streetAddress, string postalCode, string city)
+    public bool CreateCustomer(string firstName, string lastName, string email, string phoneNumber, string streetAddress, string postalCode, string city)
     {
         CustomerModel customerModel = new()
         {
@@ -62,6 +62,7 @@ public class CustomerService : ICustomerService
             return [];
         }
     }
+
     public bool DeleteCustomer(Guid id)
     {
         try
