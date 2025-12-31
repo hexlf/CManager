@@ -99,9 +99,9 @@ public class MenuController(ICustomerService customerService)
             {
                 Console.WriteLine($"Name: {customer.Firstname} {customer.Lastname}");
                 Console.WriteLine($"Email: {customer.Email}");
-                Console.WriteLine($"Phone: {customer.PhoneNumber}");
-                Console.WriteLine($"Address: {customer.Address.StreetAddress} {customer.Address.PostalCode} {customer.Address.City}");
-                Console.WriteLine($"ID: {customer.Id}");
+                //Console.WriteLine($"Phone: {customer.PhoneNumber}");
+                //Console.WriteLine($"Address: {customer.Address.StreetAddress} {customer.Address.PostalCode} {customer.Address.City}");
+                //Console.WriteLine($"ID: {customer.Id}");
                 Console.WriteLine();
             }
         }
@@ -137,6 +137,7 @@ public class MenuController(ICustomerService customerService)
 
                 Console.WriteLine("[0] Go back to menu");
                 Console.Write("Enter customer number to select: ");
+
                 var input = Console.ReadLine();
 
                 // siffra?
@@ -168,6 +169,7 @@ public class MenuController(ICustomerService customerService)
 
                 Console.Clear();
                 Console.WriteLine("You have selected: ");
+
                 Console.WriteLine($"First Name: {selectedCustomer.Firstname} " +
                                   $"\nLast Name: {selectedCustomer.Lastname} " +
                                   $"\nEmail: {selectedCustomer.Email} " +
@@ -184,7 +186,6 @@ public class MenuController(ICustomerService customerService)
 
     private void DeleteCustomer()
     {
-        //
         Console.Clear();
         Console.WriteLine("Delete Customer");
         
@@ -238,10 +239,10 @@ public class MenuController(ICustomerService customerService)
                 //bekräftelse
                 var index = choice - 1;
                 var selectedCustomer = customers[index];
+
                 Console.Clear();
                 Console.WriteLine("You have selected: ");
-                Console.WriteLine($"Name: {selectedCustomer.Firstname} {selectedCustomer.Lastname} {selectedCustomer.Email}"); //
-
+                Console.WriteLine($"Name: {selectedCustomer.Firstname} {selectedCustomer.Lastname} {selectedCustomer.Email}"); 
 
                 while (true)
                 {
