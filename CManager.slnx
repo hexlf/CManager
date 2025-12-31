@@ -3,4 +3,5 @@
   <Project Path="CManager.dom/CManager.Dom.csproj" Id="91d4cdc8-64a9-4f5d-86a9-6da3eff0dc1d" />
   <Project Path="CManager.Presentation.ConsoleApp/CManager.Presentation.ConsoleApp.csproj" />
   <Project Path="CManager.repo/CManager.Repo.csproj" Id="90ae118e-40a6-411a-a7ee-1c1a11019e3d" />
+  <Project Path="CManager.Test/CManager.Test.csproj" Id="31964b81-3556-4d98-bd43-6de1afa5e341" />
 </Solution>

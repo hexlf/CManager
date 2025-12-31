@@ -38,6 +38,7 @@ public class CustomerService : ICustomerService
             var customers = _customerRepo.GetCustomers();
             customers.Add(customerModel);
             var result = _customerRepo.SaveCustomerModel(customers);
+
             return result;
         }
         catch (Exception)
@@ -51,6 +52,7 @@ public class CustomerService : ICustomerService
     public IEnumerable<CustomerModel> GetAllCustomers(out bool hasError)
     {
         hasError = false;
+
         try
         {
            var customers = _customerRepo.GetCustomers();
